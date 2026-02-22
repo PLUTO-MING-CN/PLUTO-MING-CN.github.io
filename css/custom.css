@@ -101,12 +101,12 @@
 
 /* 强制设置全局背景图 */
 html, body {
-  background: url("/img/177172834696281fbfe8c9899b442b4cbfd0726d928eb700b.jpg") no-repeat center center fixed !important;
+  background: url("/img/bg_main.jpg") no-repeat center center fixed !important;
   background-size: cover !important;
 }
 
 /* 强制设置首页顶部大图（如果需要） */
 #page-header {
-  background: url("/img/177172834696281fbfe8c9899b442b4cbfd0726d928eb700b.jpg") no-repeat center center !important;
+  background: url("/img/bg_main.jpg") no-repeat center center !important;
   background-size: cover !important;
 }
