@@ -73,6 +73,7 @@
   }
 }
 
+
 /* 黑夜模式适配 */
 [data-theme="dark"] #aside-content > .card-widget.card-info {
   background: #191919ee;
@@ -96,4 +97,16 @@
 #site-subtitle {
   color: #f0f0f0 !important; /* 副标题改为浅灰色 */
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7) !important;
+}
+
+/* 强制设置全局背景图 */
+html, body {
+  background: url("/img/177172834696281fbfe8c9899b442b4cbfd0726d928eb700b.jpg") no-repeat center center fixed !important;
+  background-size: cover !important;
+}
+
+/* 强制设置首页顶部大图（如果需要） */
+#page-header {
+  background: url("/img/177172834696281fbfe8c9899b442b4cbfd0726d928eb700b.jpg") no-repeat center center !important;
+  background-size: cover !important;
 }
