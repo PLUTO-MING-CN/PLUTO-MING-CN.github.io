@@ -104,26 +104,3 @@
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7) !important;
 }
 
-/* 强制设置全局背景图 */
-html, body {
-  background: url("/img/bg_main.jpg") no-repeat center center fixed !important;
-  background-size: cover !important;
-}
-
-/* 强制设置首页顶部大图（如果需要） */
-#page-header {
-  background: url("/img/bg_main.jpg") no-repeat center center !important;
-  background-size: cover !important;
-}
-
-* 小冰分类分类磁铁黑夜模式适配 */
-/* 一般状态 */
-[data-theme="dark"] .magnet_link_context {
-  background: #1e1e1e;
-  color: antiquewhite;
-}
-/* 鼠标悬浮状态 */
-[data-theme="dark"] .magnet_link_context:hover {
-  background: #3ecdf1;
-  color: #f2f2f2;
-}
