@@ -252,3 +252,62 @@ svg.icon {
   fill: currentColor;
   overflow: hidden;
 }
+
+/* ====================== Waline 评论区 毛玻璃样式优化 ====================== */
+#waline-wrap,
+.waline-container {
+  background: var(--trans-light) !important;
+  backdrop-filter: var(--backdrop-filter) !important;
+  border: var(--border-style) !important;
+  border-radius: 20px !important;
+  padding: 20px !important;
+  box-shadow: none !important;
+}
+
+/* 深色模式适配 */
+[data-theme="dark"] #waline-wrap,
+[data-theme="dark"] .waline-container {
+  background: var(--trans-dark) !important;
+  border-color: #444 !important;
+}
+
+/* 评论输入框 */
+.wl-input {
+  background: transparent !important;
+  border: 1px solid #ccc !important;
+  border-radius: 12px !important;
+  padding: 10px 14px !important;
+}
+[data-theme="dark"] .wl-input {
+  border-color: #555 !important;
+  color: #fff !important;
+}
+
+/* 发表按钮 */
+.wl-btn {
+  background: #49b1f5 !important;
+  border-radius: 10px !important;
+  border: none !important;
+  padding: 6px 14px !important;
+  color: #fff !important;
+}
+.wl-btn:hover {
+  background: #3a9cd8 !important;
+}
+
+/* 单条评论卡片 */
+.wl-comment {
+  background: transparent !important;
+  border-radius: 14px !important;
+  padding: 12px !important;
+  margin: 10px 0 !important;
+  border: 1px solid rgba(169, 169, 169, 0.4) !important;
+}
+[data-theme="dark"] .wl-comment {
+  border-color: #444 !important;
+}
+
+/* 评论区头像圆角 */
+.wl-avatar {
+  border-radius: 50% !important;
+}
