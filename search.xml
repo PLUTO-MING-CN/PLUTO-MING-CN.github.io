@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>深大计算机导论（毛睿）笔记</title>
+      <link href="/2026/03/04/%E6%B7%B1%E5%A4%A7%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%AF%BC%E8%AE%BA%EF%BC%88%E6%AF%9B%E7%9D%BF%EF%BC%89%E7%AC%94%E8%AE%B0/"/>
+      <url>/2026/03/04/%E6%B7%B1%E5%A4%A7%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%AF%BC%E8%AE%BA%EF%BC%88%E6%AF%9B%E7%9D%BF%EF%BC%89%E7%AC%94%E8%AE%B0/</url>
+      
+        <content type="html"><![CDATA[<h1 id="深大计算机导论（毛睿）笔记2025版"><a href="#深大计算机导论（毛睿）笔记2025版" class="headerlink" title="深大计算机导论（毛睿）笔记2025版"></a>深大计算机导论（毛睿）笔记2025版</h1><hr><p><em>本文章仅供指导老师为毛睿老师的同学参考，普通大学计算机课程、计算机导论的同学不适用！</em></p><hr><h2 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h2><p><img src="/img/exported_image.png" alt="计算机导论概念图" title="计算机思维导论概念图"></p><h3 id="核心三问"><a href="#核心三问" class="headerlink" title="核心三问"></a>核心三问</h3><ul><li>什么是计算机</li><li>为何学计算机</li><li><p>如何学计算机</p><p><strong><em>注意！计算机不只是工具学科</em></strong><br><em>ps.我看未必</em></p></li></ul><hr><h3 id="计算思维课程体系构建"><a href="#计算思维课程体系构建" class="headerlink" title="计算思维课程体系构建"></a>计算思维课程体系构建</h3><p>包含计算基础、Computer Science Unplugged（无插件计算机科学）、计算机软硬件基础三大模块。</p><hr><h3 id="三大基础概念"><a href="#三大基础概念" class="headerlink" title="三大基础概念"></a>三大基础概念</h3><ul><li>科学<ul><li>达尔文定义：将实施归类，从中提炼一般规律或结论</li><li>分类：自然科学，社会科学，思维科学</li></ul></li><li>学科：科学的特定领域或分支，是科学的精细化分</li><li>思维：人类的高级心理活动，本质是语言的运用，大脑通过<strong>分析、抽象、综合、总结</strong>处理信息<ul><li>分析：将复杂整体拆解为组成个体</li><li>抽象： 提炼个体间的共性</li><li>综合：将个体整合为复杂整体</li><li>总结：对比个体差异，对整体下结论</li></ul></li></ul><hr><h3 id="三大支柱"><a href="#三大支柱" class="headerlink" title="三大支柱"></a>三大支柱</h3><ul><li>理论科学</li><li>实验科学</li><li>计算科学（第三支柱）</li></ul><hr><h3 id="三大思维及其对应关系"><a href="#三大思维及其对应关系" class="headerlink" title="三大思维及其对应关系"></a>三大思维及其对应关系</h3><ul><li>理论科学——理论思维——推理、归纳——数学</li><li>实验科学——实验思维——观察、总结自然规律——物理学</li><li>计算科学——计算思维——设计、构建——计算学科</li></ul><hr><h3 id="计算思维核心内涵"><a href="#计算思维核心内涵" class="headerlink" title="计算思维核心内涵"></a>计算思维核心内涵</h3><ol><li>提出者：周以真（Jeannette M. Wing），卡内基梅隆大学计算机系前主任、微软前全球副总裁、哥伦比亚大学副校长，是计算思维的核心提出 / 倡导；</li><li>正式定义：通过运用计算机科学的基础概念，解决问题、设计系统、理解人类行为的思维方式，包含一系列反映计算机科学广度的思维工具；</li><li>18 类典型思维示例：递归思维、并行处理、将代码解读为数据 / 数据解读为代码、抽象与分解、分离关注点、启发式推理、反复搜索等；</li><li><strong>六大核心特征：概念化而非编程、基础性而非机械技能、人类的思维方式而非计算机的、补充并融合数学与工程思维、面向所有人、所有领域、关注思想而非人工制品；</strong></li><li>跨学科广泛应用：覆盖生物、脑科学、化学、地质学、数学、工程、经济学、社会科学、医学、法律、娱乐、艺术、体育13 大核心学科，还延伸至教育改革、科学仿真（龙卷风、地震、核实验模拟）等方向，典型应用如波音 777 仅通过计算机仿真完成测试、Dreamworks 利用 HP 数据中心制作动画。</li></ol><hr><h3 id="图灵机与冯・诺依曼机"><a href="#图灵机与冯・诺依曼机" class="headerlink" title="图灵机与冯・诺依曼机"></a>图灵机与冯・诺依曼机</h3><ul><li>图灵机：由无限长带子、读写头、控制单元、五元组指令集组成，带子仅含 0/1 两个字符，指令集格式为  <em>(qi Sj Sk R(L/N)qn )</em>  通过状态转换完成计算，是计算理论的基础模型；</li><li>冯・诺依曼机：基于存储程序概念，是现代计算机的硬件架构基础，实现了程序和数据的统一存储与自动化执行。</li></ul><hr><h3 id="位（bit）"><a href="#位（bit）" class="headerlink" title="位（bit）"></a>位（bit）</h3><p>二进制数字，仅有0和1两种状态，<strong>是计算机中最小的信息单位</strong></p><hr><h3 id="bool（布尔）值"><a href="#bool（布尔）值" class="headerlink" title="bool（布尔）值"></a>bool（布尔）值</h3><ul><li>1——真</li><li>0——假  </li></ul><hr><h3 id="进制"><a href="#进制" class="headerlink" title="进制"></a>进制</h3><ul><li>10进制：0——9，9后进位</li><li>16进制：0——9，A——F，F后进位</li><li>8进制：0——7，7后进位</li><li>2进制：0——1，1后进位</li></ul><hr><h3 id="存储器"><a href="#存储器" class="headerlink" title="存储器"></a>存储器</h3><ul><li>存储单元：基本单位为<strong>字节（byte）</strong>，1字节对应8位</li><li>地址：每个存储单元的唯一数字标识，从 0 开始连续编号，通过地址可随机访问任意存储单元</li><li>存储类型：<ul><li>RAM（随机存储器）：可任意顺序访问单个存储单元</li><li>DRAM（动态随机存储器）：属于RAM，易失性存储（断电后数据丢失）</li></ul></li><li>容量计量：KB（10^3B），MB（10^6B），GB（10^9B），TB（10^12B）……</li></ul><hr><h3 id="海量存储"><a href="#海量存储" class="headerlink" title="海量存储"></a>海量存储</h3><ul><li>核心特性：与主存相比，容量更大、非易失性（断电后数据不丢失）、访问速度更慢，分为在线存储和离线存储。</li><li>主要类型<ul><li>磁存储：磁盘（按磁道、扇区划分，通过读写头访问）、磁带（顺序存储，访问速度最慢）；</li><li>光存储：CD、DVD（数据存储在螺旋形磁道的扇区中）；</li></ul></li><li>闪存：U 盘、固态硬盘 (SSD) 等，无机械部件，访问速度快于磁存储。</li></ul><hr><h3 id="文本"><a href="#文本" class="headerlink" title="文本"></a>文本</h3><p>为每个字符分配唯一位模式，核心编码标准：</p><ul><li>ASCII：7 位编码，可表示 128 个字符，适用于英语文本；</li><li>Unicode：16 位编码，可表示世界主要语言的符号；</li><li>ISO 标准：32 位编码，可表示几乎所有语言的符号。</li></ul><h2 id="重点考点"><a href="#重点考点" class="headerlink" title="重点考点"></a>重点考点</h2><h3 id="进制缩写（作为后缀置于数值后，如101B）"><a href="#进制缩写（作为后缀置于数值后，如101B）" class="headerlink" title="进制缩写（作为后缀置于数值后，如101B）"></a>进制缩写（作为后缀置于数值后，如101B）</h3><ul><li>二进制——B</li><li>八进制——Q</li><li>十进制——D</li><li>十六进制——H</li></ul><hr><p><strong>进制转换（重点）</strong></p><ul><li></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 计算机导论 </tag>
+            
+            <tag> 笔记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>如何给博客添加AI系统</title>
       <link href="/2026/02/25/%E5%A6%82%E4%BD%95%E7%BB%99%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0AI%E7%B3%BB%E7%BB%9F/"/>
       <url>/2026/02/25/%E5%A6%82%E4%BD%95%E7%BB%99%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0AI%E7%B3%BB%E7%BB%9F/</url>
