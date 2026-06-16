@@ -567,7 +567,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     updateHeaderPositions()
-    btf.addEventListenerPjax(window, 'resize', btf.throttle(updateHeaderPositions, 200))
+    const throttledUpdate = btf.throttle(updateHeaderPositions, 200)
+    btf.addEventListenerPjax(window, 'resize', throttledUpdate)
+
+    if ('ResizeObserver' in window) {
+      const observer = new ResizeObserver(throttledUpdate)
+      observer.observe($article)
+      btf.addGlobalFn('pjaxSendOnce', () => { observer.disconnect() })
+    }
 
     const findHeadPosition = top => {
       if (top === 0) return false
@@ -662,22 +669,17 @@ document.addEventListener('DOMContentLoaded', () => {
       $body.appendChild(newEle)
     },
     darkmode: () => { // switch between light and dark mode
-      if (typeof switchNightMode === 'function') {   //新增
-        switchNightMode()                            //新增
+      const willChangeMode = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark'
+      if (willChangeMode === 'dark') {
+        btf.activateDarkMode()
+        GLOBAL_CONFIG.Snackbar !== undefined && btf.snackbarShow(GLOBAL_CONFIG.Snackbar.day_to_night)
       } else {
-        const willChangeMode = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark'
-        if (willChangeMode === 'dark') {
-          btf.activateDarkMode()
-          GLOBAL_CONFIG.Snackbar !== undefined && btf.snackbarShow(GLOBAL_CONFIG.Snackbar.day_to_night)
-        } else {
-          btf.activateLightMode()
-          GLOBAL_CONFIG.Snackbar !== undefined && btf.snackbarShow(GLOBAL_CONFIG.Snackbar.night_to_day)
-        }
-        btf.saveToLocal.set('theme', willChangeMode, 2)
-        handleThemeChange(willChangeMode)  // 如果原有这行，请务必保留
+        btf.activateLightMode()
+        GLOBAL_CONFIG.Snackbar !== undefined && btf.snackbarShow(GLOBAL_CONFIG.Snackbar.night_to_day)
       }
+      btf.saveToLocal.set('theme', willChangeMode, 2)
+      handleThemeChange(willChangeMode)
     },
-
     'rightside-config': item => { // Show or hide rightside-hide-btn
       const hideLayout = item.firstElementChild
       if (hideLayout.classList.contains('show')) {
